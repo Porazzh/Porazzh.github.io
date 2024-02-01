@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garnuchy</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fontello.css">
+    <link rel="stylesheet" href="./styles/sideBarStyle.css">
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/register.js"></script>
+</head>
+<body>
+    <a href="javascript:void(0)" id="openSbBtn" class="openSbBtn" >&#9776</a>
+    <nav id="mySideBar" class="openedSideBar" >
+        <ul class="navList">
+            <li class="liLogo" id="logoSb"><a href="./index.html"><img class="imgLogo" src="./photos/logo.png" alt=""></a></li>
+            <li><a href="javascript:void(0)" class="closeSbBtn" id="closeSbBtn">&times;</a></li>
+            <li><a class="txt" href="./index.html" style="color: #f1f1f1;"><span class="spanPusty"></span><span class="icon-stronaGlowna"></span><span id="txtSpanSb"> Strona Główna</span> </a></li>
+            <li><a class="txt" href="#"><span class="spanPusty"></span><span class="icon-kategorie"></span><span id="txtSpanSb"> Kategorie</span></a></li>
+            <li><a class="txt" href="#"><span class="spanPusty"></span><span class="icon-koszyk"></span><span id="txtSpanSb"> Koszyk</span></a></li>
+            <li><a class="txt" href="./regulamin.html"><span class="spanPusty"></span><span class="icon-regulamin"></span><span id="txtSpanSb"> Regulamin</span></a></li>
+            <li><a class="txt" href="./onas.html"><span class="spanPusty"></span><span class="icon-oNas"></span><span id="txtSpanSb"> O Nas</span></a></li>
+            <li><a class="txt" href="./kontakt.html"><span class="spanPusty"></span><span class="icon-kontakt"></span><span id="txtSpanSb"> Kontakt</span></a></li>
+        </ul>
+        <footer>
+            <span>&copy; WebProject</span>
+        </footer>
+    </nav>
+    <header>
+        <h1 class="mainTitle">
+            <a href="./index.html">Garnuchy</a>
+        </h1>
+        <a href="#" class="headerKoszyk icon-koszyk"></a>
+        <a href="./login.html" class="headerUser icon-user"></a>
+    </header>
+    <main>
+        <section id="chowac">
+            <form action="#" class="rejestracjaForm" id="rejestracjaForm">
+                <div class="registerData">
+                    <div class="dataDiv">
+                        <span>Login: </span>
+                        <input type="text" id="userLoginRegister">
+                    </div>
+                    <div class="dataDiv">
+                        <span>E-mail: </span>
+                        <input type="text" id="userEmailRegister">
+                    </div>
+                    <div class="dataDiv">
+                        <span>Hasło: </span>
+                        <input type="password" id="userPasswordRegister">
+                    </div>
+                    <div class="dataDiv">
+                        <span>Numer telefonu: </span>
+                        <input type="text" id="userPhonenbrRegister">
+                    </div>
+                </div>
+                <div class="checkboxDiv">
+                    <div>
+                        <input type="checkbox" id="pedalstwo" name="tosAccept"/>
+                        <label for="pedalstwo">Oświadczam że jestem gejem i zapoznałem się z <a href=""> regulaminem.</a>  </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="przetwarzanie" name="rodoAccept"/>
+                        <label for="przetwarzanie">Zgadzam się na sprzedanie moich danych do kim dzong una i marka zuckleberga</label>
+                    </div>
+                </div>
+                <div class="buttonsDiv">
+                    <button type="submit" class="signInBtn">Załóż konto</button>
+                </div>
+                <div class="haveAcc">
+                    <span>Masz już konto? <a href="./login.html">Zaloguj się</a></span>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

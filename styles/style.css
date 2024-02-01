@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "Antonio";
+  src: url("../font/Antonio-Bold.ttf");
+}
+:root {
+  --sidebar-txtcolor: #818181;
+  --main-txtcolor: #f1f1f1;
+  --border: solid #111 0.4vh ;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Tahoma;
+}
+* ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  background-color: #111;
+}
+* ::-webkit-scrollbar {
+  width: 10px;
+  background-color: #111;
+}
+* ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #444;
+}
+
+html body {
+  background-color: var(--main-txtcolor);
+  min-height: 100vh;
+}
+html body .openSbBtn {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  background-color: #111;
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  border: none;
+  font-size: 3vh;
+  z-index: 3;
+  padding: 1vh 20px;
+  width: 64px;
+  height: 6vh;
+  color: var(--sidebar-txtcolor);
+  transition: 0.5s;
+}
+html body .openSbBtn:hover {
+  background-color: #444;
+  text-shadow: 2px 2px 1px #000000;
+  color: var(--main-txtcolor);
+  transition: 0.5s;
+}
+html body section {
+  height: 60vh;
+  margin-left: 250px;
+  transition: 0.5s;
+  padding: 5px;
+  padding-top: 6.5vh;
+}
+html body section article.gridParrentFirst {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5 1fr 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin: 50px;
+  min-height: 0px;
+  max-height: 800px;
+}
+html body section article.gridParrentFirst div {
+  border: 2px solid #111;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+html body section article.gridParrentFirst div.div1 {
+  grid-area: 1/1/2/4;
+}
+html body section article.gridParrentFirst div.div2 {
+  grid-area: 1/4/3/6;
+}
+html body section article.gridParrentFirst div.div3 {
+  grid-area: 2/1/6/3;
+}
+html body section article.gridParrentFirst div.div4 {
+  grid-area: 4/4/6/6;
+}
+html body section article.gridParrentFirst div.div5 {
+  grid-area: 2/3/6/4;
+}
+html body section article.gridParrentFirst div.div6 {
+  grid-area: 3/4/4/6;
+}
+html body section article.gridParrentSecond {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin: 50px;
+  min-height: 0px;
+  max-height: 800px;
+}
+html body section article.gridParrentSecond div {
+  border: var(--border);
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+html body section article.gridParrentSecond div.div1 {
+  grid-area: 1/1/3/5;
+}
+html body section article.gridParrentSecond div.div2 {
+  grid-area: 3/1/4/5;
+}
+html body section article.gridParrentSecond div.div3 {
+  grid-area: 4/1/6/3;
+}
+html body section article.gridParrentSecond div.div4 {
+  grid-area: 4/3/6/5;
+}
+html body section article.gridParrentSecond div.div5 {
+  grid-area: 1/5/5/6;
+}
+html body section article.gridParrentSecond div.div6 {
+  grid-area: 5/5/6/6;
+}
+html body section .rejestracjaForm {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  border: var(--border);
+  width: 50vw;
+  margin: auto;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  border-radius: 10px;
+  background-color: white;
+}
+html body section .rejestracjaForm .registerData div.dataDiv {
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+html body section .rejestracjaForm .registerData div.dataDiv span {
+  display: block;
+  width: 30%;
+  line-height: 5vh;
+  padding-right: 10px;
+  font-size: 2vh;
+}
+html body section .rejestracjaForm .registerData div.dataDiv input {
+  width: 70%;
+  height: 5vh;
+  font-size: 2.5vh;
+  padding: 10px;
+}
+html body section .rejestracjaForm .checkboxDiv {
+  padding: 10px;
+}
+html body section .rejestracjaForm .checkboxDiv div {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+html body section .rejestracjaForm .checkboxDiv div label {
+  font-size: 2vh;
+}
+html body section .rejestracjaForm .buttonsDiv {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  white-space: nowrap;
+}
+html body section .rejestracjaForm .buttonsDiv button {
+  background-color: #111;
+  color: var(--main-txtcolor);
+  font-size: large;
+  font-family: Antonio;
+  width: 50%;
+  height: 6vh;
+  font-size: 3vh;
+  margin: auto;
+}
+html body section .rejestracjaForm .buttonsDiv button:hover {
+  background-color: #222;
+}
+html body section .rejestracjaForm .haveAcc {
+  padding: 10px;
+  font-size: 2vh;
+}
+html body section .logowanieForm {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  border: var(--border);
+  width: 50vw;
+  margin: auto;
+  margin-top: 20vh;
+  border-radius: 10px;
+  background-color: white;
+  height: 40vh;
+}
+html body section .logowanieForm div.loginDataDiv {
+  margin: auto;
+  width: 80%;
+  line-height: 4vh;
+}
+html body section .logowanieForm div.loginDataDiv span {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 2.5vh;
+}
+html body section .logowanieForm div.loginDataDiv input {
+  width: 100%;
+  height: 5vh;
+  font-size: 2.5vh;
+  padding: 10px;
+}
+html body section .logowanieForm div.buttonsDiv {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+html body section .logowanieForm div.buttonsDiv a {
+  background-color: #111;
+  color: var(--main-txtcolor);
+  font-size: large;
+  font-family: Antonio;
+  width: 45%;
+  height: 6vh;
+  font-size: 3vh;
+  margin-left: auto;
+}
+html body section .logowanieForm div.buttonsDiv a button {
+  width: 100%;
+}
+html body section .logowanieForm div.buttonsDiv a:hover {
+  background-color: #222;
+}
+html body section .logowanieForm div.buttonsDiv button {
+  background-color: #111;
+  color: var(--main-txtcolor);
+  font-size: large;
+  font-family: Antonio;
+  width: 45%;
+  height: 6vh;
+  font-size: 3vh;
+}
+html body section .logowanieForm div.buttonsDiv button:hover {
+  background-color: #222;
+}
+html body header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  height: 6vh;
+  background-color: #111;
+  box-shadow: 0 1px 2px #111;
+}
+html body header > h1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+html body header > h1 > a {
+  font-family: Antonio;
+  font-size: 4vh;
+  color: var(--main-txtcolor);
+  text-decoration: none;
+  transition: 0.2s;
+}
+html body header > h1 > a:hover {
+  text-shadow: 2px 2px 2px var(--sidebar-txtcolor);
+}
+html body header > .headerKoszyk {
+  text-decoration: none;
+  width: 6vh;
+  height: 6vh;
+  margin-right: 1%;
+  margin-left: auto;
+  align-self: flex-end;
+  font-size: 4vh;
+  color: var(--sidebar-txtcolor);
+  transition: 0.5s;
+}
+html body header > .headerKoszyk:hover {
+  color: var(--main-txtcolor);
+  cursor: pointer;
+  text-shadow: 3px 3px 1px var(--sidebar-txtcolor);
+}
+html body header > .headerUser {
+  text-decoration: none;
+  width: 6vh;
+  height: 6vh;
+  margin-right: 2%;
+  align-self: flex-end;
+  font-size: 4vh;
+  color: var(--sidebar-txtcolor);
+  transition: 0.5s;
+}
+html body header > .headerUser:hover {
+  color: var(--main-txtcolor);
+  cursor: pointer;
+  text-shadow: 3px 3px 1px var(--sidebar-txtcolor);
+}
+html body article.podStrona > p {
+  font-size: larger;
+}
+html body article.podStrona#oNas > p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sideBar {
+    padding-top: 15px;
+  }
+  .sideBar a {
+    font-size: 18px;
+  }
+}
